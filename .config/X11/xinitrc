@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Set disable screensaver and set dmps to 0
+xset dpms 0 0 0
+xset s off
+xset s noblank
+
+# Use the xresources settings
+xrdb -merge $HOME/.Xresources
+
+gentoo-pipewire-launcher &
+
+picom --config $HOME/.config/picom/picom.conf & 
+
+sxhkd -c $HOME/.config/sxhkd/sxhkdrc & 
+
+dwmblocks &
+
+xset r rate 300 50 &
+
+#wallpaper
+$HOME/.config/scripts/wallpaper
+
+# Run dwm with dbus
+exec dbus-launch --exit-with-session dwm
+

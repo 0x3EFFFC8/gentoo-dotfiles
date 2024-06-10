@@ -1,0 +1,11 @@
+export _JAVA_AWT_WM_NONREPARENTING=1
+export EDITOR="nvim"
+export TERMINAL="kitty"
+export BROWSER="librewolf"
+export VIDEO="mpv"
+export IMAGE="nsxiv"
+export WM="dwm"
+export JAVA_HOME=/usr/lib/jvm/jdk-21-oracle-x64/bin/java
+export NNN_PLUG='p:preview-tui'
+export NNN_FIFO=/tmp/nnn.fifo
+export LS_COLORS="rs=0:di=34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;4>"

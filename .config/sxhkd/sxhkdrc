@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+# Reload sxhkd
+super + control + r
+  pkill -USR1 -x sxhkd
+
+# Audio Control
+{F3,F2,F1}
+  ~/.config/scripts/volume-update { up, down, mute }
+
+# Brightness
+{F5,F4}
+  ~/.config/scripts/backlight-update { up, down }
+
+# screenshots
+F11
+  /usr/bin/flameshot gui
+
+Print 
+  ~/.config/scripts/screenshot
+
+# terminal
+super + Return
+    $TERMINAL
+
+#wallpaper
+F7 
+    ~/.config/scripts/wallpaper
+
+# Browser run
+super + b
+    $BROWSER
+
